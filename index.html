@@ -15,6 +15,9 @@ Author URL: http://w3layouts.com
   <link href="//fonts.googleapis.com/css?family=Poppins:100,300,400,500,500i,600,700&display=swap" rel="stylesheet">
   <!-- Template CSS -->
   <link  rel="icon"   href="firma.png" type="image/png" />
+  <!--Floating WhatsApp css-->
+  <link rel="stylesheet" href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css">
+
   
   <meta name="description" content=" Nuestra misión es ayudar a las personas, empresas y organizaciones a entender a protegerse de los riesgos.">
     <meta name="keywords" content="Seguros, riesgos, asesorias, gestión de riesgo, negocio, seguro de vida, seguro patrimonial">
@@ -721,6 +724,8 @@ Author URL: http://w3layouts.com
      <button onclick="topFunction()" id="movetop" title="Go to top">
             <span class="fa fa-long-arrow-up"></span>
     </button>
+	
+	<div id="WAButton"></div>
     <script>
             // When the user scrolls down 20px from the top of the document, show the button
             window.onscroll = function () {
@@ -770,3 +775,26 @@ Author URL: http://w3layouts.com
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v8.0" nonce="r8VwMSBe"></script>
 
+
+<!--Jquery-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+<!--Floating WhatsApp javascript-->
+<script type="text/javascript" src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script>
+
+
+<script>
+$(function() {
+  $('#WAButton').floatingWhatsApp({
+    phone: '584142043750', //WhatsApp Business phone number International format-
+    //Get it with Toky at https://toky.co/en/features/whatsapp.
+    headerTitle: 'Escríbenos por WhatsApp!', //Popup Title
+    popupMessage: 'Hola, podemos ayudarte?', //Popup Message
+    showPopup: true, //Enables popup display
+    buttonImage: '<img src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/whatsapp.svg" />', //Button Image
+    //headerColor: 'crimson', //Custom header color
+    //backgroundColor: 'crimson', //Custom background button color
+    position: "left"    
+  });
+});
+</script>
