@@ -116,15 +116,15 @@ Author URL: http://w3layouts.com
 							<h3>Formulario</h3>
 						<h4>de Contacto</h4>
 						<p>Envíanos tu consulta para hacerte llegar toda la información en el menor tiempo posible.</p>
-						<form action="https://sendmail.w3layouts.com/submitForm" method="post" class="signin-form mt-lg-5 mt-4">
+						<form action="https://formspree.io/belkys.velasco1@gmail.com" target="_blank" method="post" class="signin-form mt-lg-5 mt-4">
 							<div class="input-grids">
-								<input type="text" name="w3lName" placeholder="Nombre Completo" class="contact-input" />
-								<input type="email" name="w3lSender" placeholder="Tu E-mail" class="contact-input" />
-								<input type="text" name="w3lSubect" placeholder="Asunto" class="contact-input" />
-								<input type="number" name="w3lPhone" placeholder="Teléfono" class="contact-input" />
+								<input class="contact-input" placeholder="Nombre Completo"  type="text" id= "name" name="name" required= "required"/>
+								<input class="contact-input" placeholder="Tu E-mail"   type="email" id= "email" name="email" required= "required"/>
+								<input class="contact-input"placeholder="Asunto"   type="text" id="Subject" name="Subject" required= "required/>
+								<input class="contact-input" placeholder="Teléfono"  type="phone" id= "phone" name="phone" required= "required" />
 							</div>
 							<div  class="form-input">
-								<textarea name="w3lMessage" placeholder="Escribe tu mensaje aquí..." required=""></textarea>
+								<textarea placeholder="Escribe tu mensaje aquí..." id="message" name="message" required= "required"></textarea>
 							</div>
 							<div  class="form-input mb-5">
 								<label class="container"><p>Acepto los <a href="#">términos y condiciones.</a></p>
