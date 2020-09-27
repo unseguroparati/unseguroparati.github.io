@@ -19,7 +19,29 @@ Author URL: http://w3layouts.com
   
 </head>
 <body>
+<!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v8.0'
+          });
+        };
 
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="108851800832673">
+      </div>
 <!--/top-header-content-->
 <section class="w3l-top-header-content">
 	<div class="hny-top-menu">
@@ -709,11 +731,6 @@ Author URL: http://w3layouts.com
      <button onclick="topFunction()" id="movetop" title="Go to top">
             <span class="fa fa-long-arrow-up"></span>
     </button>
-	<!-- Your Chat Plugin code -->
-      <div class="fb-customerchat"
-        attribution=setup_tool
-        page_id="108851800832673">
-      </div>
     <script>
             // When the user scrolls down 20px from the top of the document, show the button
             window.onscroll = function () {
@@ -781,4 +798,8 @@ Author URL: http://w3layouts.com
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));</script>
 
-      
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="108851800832673">
+      </div>
